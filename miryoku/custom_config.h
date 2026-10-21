@@ -34,9 +34,9 @@ U_NP,              U_NP,              &kp LCTRL,         &kp SPACE,         &mo 
 // Hold the left inner thumb for numbers and one-handed utility keys.
 // Keep Shift and the thumbs transparent; double-tap Base to leave Gaming.
 #define MIRYOKU_LAYER_GAME_NUM \
-&kp N1,            &kp N2,            &kp N3,            &kp N4,            &kp N5,            &trans,            &trans,            &trans,            &trans,            &trans,            \
-&kp N6,            &kp N7,            &kp N8,            &kp N9,            &kp N0,            &trans,            &trans,            &trans,            &trans,            &trans,            \
-&trans,            &kp TAB,           &u_to_U_BASE,      &kp RET,           &kp ESC,           &trans,            &trans,            &trans,            &trans,            &trans,            \
+&kp ESC,           &kp N7,            &kp N8,            &kp N9,            &kp RET,           &trans,            &trans,            &trans,            &trans,            &trans,            \
+&kp TAB,           &kp N4,            &kp N5,            &kp N6,            &none,             &trans,            &trans,            &trans,            &trans,            &trans,            \
+&trans,            &kp N1,            &kp N2,            &kp N3,            &u_to_U_BASE,      &trans,            &trans,            &trans,            &trans,            &trans,            \
 U_NP,              U_NP,              &trans,            &trans,            &trans,            &trans,            &trans,            &trans,            U_NP,              U_NP
 
 // Button: double-tap the left inner home key for Gaming; right retains Num Lock.
