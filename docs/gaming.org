@@ -1,6 +1,6 @@
 * Gaming layer
 
-The gaming layers are configured in [[../miryoku/custom_config.h][custom_config.h]] for the left hand on the keyboard and the right hand on the mouse. Letters use the normal Colemak-DH positions from Base. Movement and gaming modifiers use immediate key presses, with no home-row modifiers or layer-tap keys. Assign the keys to actions in each game's controls; for the usual physical WASD positions, use W for forward, A for left, R for backward, and S for right.
+The gaming layers are configured in [[../miryoku/custom_config.h][custom_config.h]] for the left hand on the keyboard and the right hand on the mouse. Letters use the normal Colemak-DH positions from Base, except Shift replaces Z. Movement and gaming modifiers use immediate key presses, with no home-row modifiers or layer-tap keys. Assign the keys to actions in each game's controls; for the usual physical WASD positions, use W for forward, A for left, R for backward, and S for right.
 
 From Base, hold the left bottom-row outermost key to activate Button, then double-tap the left half's innermost home-row key. Release the Button key after switching. Num Lock is on the right half's innermost home-row key on Button.
 
@@ -9,21 +9,21 @@ The left half's layout is shown in physical order, left to right:
 #+BEGIN_EXAMPLE
 Q      W      F      P      B
 A      R      S      T      G
-Z      X      C      D      Numbers
-             Shift  Ctrl   Space
+Shift  X      C      D      V
+             Ctrl   Space  Numbers
 #+END_EXAMPLE
 
-Hold Numbers (the normal V position) to access:
+Hold Numbers with the left inner thumb (the normal Tab position) to access:
 
 #+BEGIN_EXAMPLE
 1      2      3      4      5
 6      7      8      9      0
-V      Esc    Enter  Base   (held)
-             Shift  Ctrl   Space
+Shift  Tab    Base   Enter  Esc
+             Ctrl   Space  (held)
 #+END_EXAMPLE
 
-Release Numbers to return to Gaming. While holding Numbers, double-tap Base (the normal D position, fourth key on the bottom row) to return to the normal typing layout. Gaming stays active until you return to Base. Shift, Ctrl, and Space stay available on both gaming layers. The top two rows send numbers while Numbers is held, so release it before issuing new movement key presses.
+Release Numbers to return to Gaming. While holding Numbers, double-tap Base (the normal C position, third key on the bottom row) to return to the normal typing layout. Gaming stays active until you return to Base. Shift, Ctrl, and Space stay available on both gaming layers. The top two rows send numbers while Numbers is held, so release it before issuing new movement key presses.
 
 The right half matches Base's Colemak-DH letters with J L U Y ' / M N E I O / K H , . /, and Enter, Escape, Base on its thumbs. All gaming controls above are accessible using only the left half. The normal utility layers are not accessible from Gaming.
 
-Build and flash using your existing board and shield settings. The shared custom configuration adds Gaming to the existing keymap, so no build option is required. Keycodes follow the host keyboard layout, as on the other layers; this layout assumes the host maps those keycodes as QWERTY.
+Build and flash using your existing board and shield settings. The shared custom configuration adds Gaming to the existing keymap, so no build option is required. For the Corne-based Chocofi build, [[../config/corne.conf][corne.conf]] enables mouse support with CONFIG_ZMK_POINTING=y, including the normal Button-layer thumb clicks. Keycodes follow the host keyboard layout, as on the other layers; this layout assumes the host maps those keycodes as QWERTY.

@@ -23,19 +23,20 @@ MIRYOKU_X(GAME_NUM, "Gaming Numbers")
 #define MIRYOKU_LAYERMAPPING_GAME_NUM MIRYOKU_MAPPING
 
 // Plain Colemak-DH letters, matching Base, without home-row hold-tap modifiers.
-// Left thumbs: Shift, Ctrl, Space. Right thumbs: Enter, Escape, return to Base.
+// Left thumbs: Ctrl, Space, Numbers. Shift replaces Z; Tab is on Numbers.
+// Right thumbs: Enter, Escape, return to Base.
 #define MIRYOKU_LAYER_GAME \
 &kp Q,             &kp W,             &kp F,             &kp P,             &kp B,             &kp J,             &kp L,             &kp U,             &kp Y,             &kp SQT,           \
 &kp A,             &kp R,             &kp S,             &kp T,             &kp G,             &kp M,             &kp N,             &kp E,             &kp I,             &kp O,             \
-&kp Z,             &kp X,             &kp C,             &kp D,             &mo U_GAME_NUM,    &kp K,             &kp H,             &kp COMMA,         &kp DOT,           &kp SLASH,         \
-U_NP,              U_NP,              &kp LSHFT,         &kp LCTRL,         &kp SPACE,         &kp RET,           &kp ESC,           &to U_BASE,        U_NP,              U_NP
+&kp LSHFT,         &kp X,             &kp C,             &kp D,             &kp V,             &kp K,             &kp H,             &kp COMMA,         &kp DOT,           &kp SLASH,         \
+U_NP,              U_NP,              &kp LCTRL,         &kp SPACE,         &mo U_GAME_NUM,    &kp RET,           &kp ESC,           &to U_BASE,        U_NP,              U_NP
 
-// Hold the left bottom inner key for numbers and one-handed utility keys.
-// Keep the layer key and thumbs transparent; double-tap Base to leave Gaming.
+// Hold the left inner thumb for numbers and one-handed utility keys.
+// Keep Shift and the thumbs transparent; double-tap Base to leave Gaming.
 #define MIRYOKU_LAYER_GAME_NUM \
 &kp N1,            &kp N2,            &kp N3,            &kp N4,            &kp N5,            &trans,            &trans,            &trans,            &trans,            &trans,            \
 &kp N6,            &kp N7,            &kp N8,            &kp N9,            &kp N0,            &trans,            &trans,            &trans,            &trans,            &trans,            \
-&kp V,             &kp ESC,           &kp RET,           &u_to_U_BASE,      &trans,            &trans,            &trans,            &trans,            &trans,            &trans,            \
+&trans,            &kp TAB,           &u_to_U_BASE,      &kp RET,           &kp ESC,           &trans,            &trans,            &trans,            &trans,            &trans,            \
 U_NP,              U_NP,              &trans,            &trans,            &trans,            &trans,            &trans,            &trans,            U_NP,              U_NP
 
 // Button: double-tap the left inner home key for Gaming; right retains Num Lock.
